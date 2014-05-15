@@ -1,0 +1,19 @@
+#!/usr/bin/env sh
+APPNAME=deansify
+
+echo "Building for windows..."
+env GOOS=windows go build -o $APPNAME.exe   .
+zip $APPNAME.windows.zip $APPNAME.exe
+rm $APPNAME.exe
+
+echo "Building for darwin..."
+env GOOS=darwin  go build -o $APPNAME   .
+gzip $APPNAME
+mv $APPNAME.gz $APPNAME.darwin.gz
+
+echo "Building for linux..."
+env GOOS=linux   go build -o $APPNAME   .
+gzip $APPNAME
+mv $APPNAME.gz $APPNAME.linux.gz
+
+echo "Done."
