@@ -1,4 +1,6 @@
-package main
+// Package deansify strips ANSI escape codes from either a named file or
+// from STDIN.
+package deansify
 
 import (
 	"bufio"
@@ -8,7 +10,7 @@ import (
 	"regexp"
 )
 
-var version = "0.0.1"
+var version = "0.0.2"
 var ansiRegexp = regexp.MustCompile("\x1b[^m]*m")
 
 func stripAnsi(s string) string {
@@ -28,12 +30,16 @@ func stripReader(reader *bufio.Reader) {
 	}
 }
 
-func stripStdin() {
+// StripStdin reads text from SDTIN and emits that same text minus any
+// ANSI escape codes.
+func StripStdin() {
 	reader := bufio.NewReader(os.Stdin)
 	stripReader(reader)
 }
 
-func stripFile(fileName string) {
+// StripFile reads text from the file located at fileName and emits that same
+// text minus any ANSI escape codes.
+func StripFile(fileName string) {
 	file, err := os.Open(fileName)
 
 	if err != nil {
@@ -43,13 +49,4 @@ func stripFile(fileName string) {
 	reader := bufio.NewReader(file)
 
 	stripReader(reader)
-}
-
-func main() {
-	if len(os.Args) > 1 {
-		fileName := os.Args[1]
-		stripFile(fileName)
-	} else {
-		stripStdin()
-	}
 }
