@@ -1,5 +1,5 @@
 ## What
-![godoc badge](http://godoc.org/github.com/dpritchett/deansify?status.png)
+[![godoc badge](http://godoc.org/github.com/dpritchett/deansify?status.png)](http://godoc.org/github.com/dpritchett/deansify)
 Cross-platform utility to strip [ANSI escape codes](http://en.wikipedia.org/wiki/ANSI_escape_code#Colors) from text via `STDIN` or a named file.
 
 ## Usage
