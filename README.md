@@ -21,5 +21,5 @@ On-demand compiled binaries at Gobuild: http://gobuild.io/download/github.com/dp
 #### Go users
 ```sh
 go get -u  github.com/dpritchett/deansify
-go install github.com/dpritchett/deansify
+go install github.com/dpritchett/deansify/cmd/deansify
 ```
