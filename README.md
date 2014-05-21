@@ -14,7 +14,9 @@ Cross-platform utility to strip [ANSI escape codes](http://en.wikipedia.org/wiki
 
 ## Installation
 #### Binary download
-[Linux, OSX, and Windows binaries](https://github.com/dpritchett/deansify/releases) available on GitHub.
+On-demand compiled binaries at Gobuild: http://gobuild.io/download/github.com/dpritchett/deansify/cmd/deansify
+
+\* I don't know the people behind gobuild, but this service does generate binaries.
 
 #### Go users
 ```sh
