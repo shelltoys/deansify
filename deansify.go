@@ -4,6 +4,7 @@ package deansify
 
 import (
 	"bufio"
+	"fmt"
 	"io"
 	"log"
 	"os"
@@ -21,7 +22,7 @@ func stripReader(reader *bufio.Reader) {
 	for {
 		line, err := reader.ReadString('\n')
 		if err == nil || err == io.EOF {
-			print(stripAnsi(line))
+			fmt.Print(stripAnsi(line))
 		}
 
 		if err != nil {
