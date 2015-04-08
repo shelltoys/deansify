@@ -13,10 +13,6 @@ Cross-platform utility to strip [ANSI escape codes](http://en.wikipedia.org/wiki
 `deansify file_with_ansi_text`
 
 ## Installation
-#### Binary download
-On-demand compiled binaries at Gobuild: http://gobuild.io/download/github.com/dpritchett/deansify/cmd/deansify
-
-\* I don't know the people behind gobuild, but this service does generate binaries.
 
 #### Go users
 ```sh
