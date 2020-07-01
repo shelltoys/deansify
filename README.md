@@ -1,5 +1,4 @@
 ## What
-[ ![Download](https://api.bintray.com/packages/shelltoys/binaries/deansify/images/download.svg) ](https://bintray.com/shelltoys/binaries/deansify/_latestVersion) [![godoc badge](http://godoc.org/github.com/shelltoys/deansify?status.png)](http://godoc.org/github.com/shelltoys/deansify)
 
 Cross-platform utility to strip [ANSI escape codes](http://en.wikipedia.org/wiki/ANSI_escape_code#Colors) from text via `STDIN` or a named file.
 
@@ -15,7 +14,7 @@ Cross-platform utility to strip [ANSI escape codes](http://en.wikipedia.org/wiki
 
 ## Installation
 
-Click the download badge above.
+Click the repo's [releases](https://github.com/shelltoys/deansify/releases) link.
 
 #### Build it locally
 ```sh
